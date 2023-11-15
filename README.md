@@ -1,1 +1,1 @@
-# This is a repository for Numerical Methids Assignment 1
+# This is a repository for Numerical Methods Assignment 1
