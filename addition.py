@@ -1,13 +1,13 @@
+# Generalising the function to take an arbitrary number of keyword arguments
+def adder(**x):
+    return sum(x.values())
 
-# Modifying the function to take keyword arguments with default values
-def adder(good=1, bad=2, ugly=3):
-    return good + bad + ugly
+# Calling the generalised function with keyword arguments
+result = adder(ugly=1, good=5, bad=3)
 
-# Call the function with specific keyword arguments
-result = adder(ugly=1, good=5)
+# Printing the result
+print("Sum of the keyword arguments: ", result)
 
-# Print the result
-print("Sum: ", result)
 
 
 
