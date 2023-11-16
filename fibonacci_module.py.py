@@ -1,6 +1,5 @@
 # Python code for generating first 10 Fibonacci numbers
 
-
 # defining a function "generate_fibonacci" to generate first n Fibonacci numbers
 
 def generate_fibonacci(n):
