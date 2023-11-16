@@ -1,13 +1,13 @@
 
-# Defining the adder function that adds an arbitrary number of arguments
-def adder(*x):
-    return sum(x)
+# Modifying the function to take keyword arguments with default values
+def adder(good=1, bad=2, ugly=3):
+    return good + bad + ugly
 
-# Calling  the generalized adder function
-result = adder(1, 2, 3, 4, 5)
+# Call the function with specific keyword arguments
+result = adder(ugly=1, good=5)
 
-# Printing the result
-print("Sum = ", result)
+# Print the result
+print("Sum: ", result)
 
 
 
