@@ -1,11 +1,14 @@
-# Python code that searches a list of numbers for 2^5
 
-# Now removing the loop completely by using the 'in' operator
-
-L = [1, 2, 4, 8, 16, 32, 64]
+powers_of_2 = []
 X = 5
 
-if 2 ** X in L:
-    print(f"at index {L.index(2 ** X)}")
+# Generate powers of 2 using a for loop and append method
+for i in range(X + 1):
+    powers_of_2.append(2 ** i)
+
+# Check if 2**X is in the generated list
+if 2 ** X in powers_of_2:
+    print(f"at index {powers_of_2.index(2 ** X)}")
 else:
     print(f"{X} not found")
+
