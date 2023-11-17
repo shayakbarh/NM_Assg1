@@ -21,10 +21,15 @@ int main() {
     printf("Mean: %f\n", result[0]);
     printf("Variance: %f\n", result[1]);
 
+    // Write the result to a text file
+    FILE *textFile = fopen("result.txt", "w");
+    fprintf(textFile, "Mean: %f\n", result[0]);
+    fprintf(textFile, "Variance: %f\n", result[1]);
+    fclose(textFile);
+
     
 
      // Free the allocated memory
     free(my_array);
     return 0;
 }
-
