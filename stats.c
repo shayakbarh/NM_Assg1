@@ -1,4 +1,6 @@
 // stats.c
+// File where I move my function
+
 #include "stats.h"
 
 void mean_variance(float *array, int length  , float *result) {

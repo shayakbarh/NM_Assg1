@@ -1,4 +1,5 @@
-// main.c
+// Here I moved my function to a second file named stat.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "stats.h"
@@ -35,4 +36,5 @@ int main() {
      // Free the allocated memory
     free(my_array);
     return 0;
+
 }
