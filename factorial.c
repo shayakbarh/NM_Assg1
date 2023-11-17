@@ -1,19 +1,23 @@
-// factorial calculation using c code 
+/*
+    factorial calculation of some large number using c code
+    and finding the time taken to do it
+*/  
+
 #include <stdio.h>
-int factorial(int n);
-
-int main() {
-    int n = 4;
-    printf("Factorial of %d is %d\n", n, factorial(n));
-    return 0;
-}
-// defining factorial function 
-
-int factorial(int n)
-{
+#include <time.h>
+long long factorial(int n) {
     if (n == 0 || n == 1) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
+    return 1;
+} else {
+    return n * factorial(n - 1);
+}
+}
+int main() {
+    int n = 25; // Example: Compute factorial of 20
+    clock_t start = clock();
+    long long result = factorial(n);
+    clock_t end = clock();
+    printf("Factorial of %d is %lld\n", n, result);
+    printf("Time taken: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
+    return 0;
 }
