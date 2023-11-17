@@ -1,5 +1,6 @@
 # Makefile for Windows CMD
 
+
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 OBJS = main.o stats.o
