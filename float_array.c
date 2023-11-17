@@ -1,3 +1,5 @@
+// To free the memory used for the array
+
 // calculating the mean and variance of the array that I constructed in step 2  
 
 #include<stdio.h>
@@ -24,6 +26,9 @@ int main()
     // Print mean and variance
     printf("Mean: %f\n", result[0]);
     printf("Variance: %f\n", result[1]);
+
+    // to free the allocated memory of the array
+    free(array);
 
     return 0; // Return 0 to indicate successful execution
 
@@ -53,7 +58,7 @@ void mean_variance(float *given_array, int length, float *relust)
     }
     variance /= length;
 
-    
+
     // assign the result to the output array 
     relust[0]=mean;
     relust[1]=variance;
